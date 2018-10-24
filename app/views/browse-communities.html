@@ -7,26 +7,43 @@
 
 {% block content %}
 
+
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
+      {{ govukBackLink({
+        text: "Back",
+        href: "/"
+      }) }}
       <h1 class="govuk-heading-xl">Browse service communities</h1>
       <p class="govuk-body">Use the list below to do bla bla bla</p>
 
       <ul class="govuk-list govuk-!-padding-top-7">
         <li>
-          <h2 class="govuk-heading-m">Start a business <br>{{ govukTag({ text: "beta" }) }}</h2>
+          <h2 class="govuk-heading-m">Start a business</h2>
+          <p class="govuk-body"><strong>12</strong> workshops, <strong>25</strong> people, <strong>10+</strong> departments and agencies</p>
+          <p class="govuk-body"><a href="#" class="govuk-link">Learn more</a>
+          <p class="govuk-body">{{ govukTag({ text: "beta" }) }}</p>
         </li>
         <hr class="govuk-section-break govuk-section-break--m ">
         <li>
-          <h2 class="govuk-heading-m">Employ someone <br>{{ govukTag({ text: "alpha" }) }}</h2>
+          <h2 class="govuk-heading-m">Employ someone</h2>
+          <p class="govuk-body"><strong>4</strong> workshops, <strong>15</strong> people, <strong>6</strong> departments and agencies</p>
+          <p class="govuk-body"><a href="#" class="govuk-link">Learn more</a>
+          <p class="govuk-body">{{ govukTag({ text: "alpha" }) }}</p>
         </li>
         <hr class="govuk-section-break govuk-section-break--m ">
         <li>
-          <h2 class="govuk-heading-m">Import-export <br>{{ govukTag({ text: "alpha" }) }}</h2>
+          <h2 class="govuk-heading-m">Import-export</h2>
+          <p class="govuk-body"><strong>2</strong> workshops, <strong>31</strong> people, <strong>10+</strong> departments and agencies</p>
+          <p class="govuk-body"><a href="#" class="govuk-link">Learn more</a>
+          <p class="govuk-body">{{ govukTag({ text: "alpha" }) }}</p>
         </li>
         <hr class="govuk-section-break govuk-section-break--m ">
         <li>
-          <h2 class="govuk-heading-m">Get health benefits <br>{{ govukTag({ text: "discovery" }) }}</h2>
+          <h2 class="govuk-heading-m">Get health benefits</h2>
+          <p class="govuk-body"><strong>1</strong> workshop, <strong>15</strong> members, <strong>2</strong> departments and agencies</p>
+          <p class="govuk-body"><a href="#" class="govuk-link">Learn more</a>
+          <p class="govuk-body">{{ govukTag({ text: "discovery" }) }}</p>
         </li>
       </ul>
 

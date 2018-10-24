@@ -9,21 +9,47 @@
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
-      <h1 class="govuk-heading-xl">
-        What do you want to do?
-      </h1>{{releaseVersion | log }}
-      <p>
-        <a href="" class="govuk-link">Browse service communities</a>
-      </p>
-      <p>
-        <a href="" class="govuk-link">Learn about lifecycle of communities</a>
-      </p>
-      <p>
-        <a href="" class="govuk-link">Browse case studies</a>
-      </p>
-      <p>
-        <a href="" class="govuk-link">Browse artefacts</a>
-      </p>
+      {{ govukBackLink({
+        text: "Back",
+        href: "/"
+      }) }}
+      <h1 class="govuk-heading-xl">Learn about the lifecycle of a community</h1>
+      <p class="govuk-body">We use the below to assess maturity of a community and help you assess what to do next</p>
+
+      <ul class="govuk-list govuk-!-padding-top-7">
+        <li>
+          <h2 class="govuk-heading-m">{{ govukTag({ text: "discovery" }) }}</h2>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>Know what your service area is</li>
+          </ul>
+        </li>
+        <hr class="govuk-section-break govuk-section-break--m ">
+        <li>
+          <h2 class="govuk-heading-m">{{ govukTag({ text: "alpha" }) }}</h2>
+          <p class="govuk-body">For your community to be in this stage, you should:</p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>Make a map</li>
+            <li>Publish a step-by-step</li>
+          </ul>
+        </li>
+        <hr class="govuk-section-break govuk-section-break--m ">
+        <li>
+          <h2 class="govuk-heading-m">{{ govukTag({ text: "beta" }) }}</h2>
+          <p class="govuk-body">For your community to be in this stage, you should:</p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>Share research</li>
+            <li>Share data</li>
+          </ul>
+        </li>
+        <hr class="govuk-section-break govuk-section-break--m ">
+        <li>
+          <h2 class="govuk-heading-m">{{ govukTag({ text: "live" }) }}</h2>
+          <p class="govuk-body">For your community to be in this stage, you should:</p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>Make a cross-government business case</li>
+          </ul>
+        </li>
+      </ul>
 
 
     </div>

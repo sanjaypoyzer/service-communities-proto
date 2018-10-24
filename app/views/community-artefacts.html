@@ -9,21 +9,39 @@
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
-      <h1 class="govuk-heading-xl">
-        What do you want to do?
-      </h1>{{releaseVersion | log }}
-      <p>
-        <a href="" class="govuk-link">Browse service communities</a>
-      </p>
-      <p>
-        <a href="" class="govuk-link">Learn about lifecycle of communities</a>
-      </p>
-      <p>
-        <a href="" class="govuk-link">Browse case studies</a>
-      </p>
-      <p>
-        <a href="" class="govuk-link">Browse artefacts</a>
-      </p>
+      {{ govukBackLink({
+        text: "Back",
+        href: "/"
+      }) }}
+      <h1 class="govuk-heading-xl">Browse service community artefacts</h1>
+      <p class="govuk-body">Use the list below to design your next service community workshop</p>
+
+      <ul class="govuk-list govuk-!-padding-top-7">
+        <li>
+          <h2 class="govuk-heading-m">Terms of reference</h2>
+          <p class="govuk-body">You should have this in <strong>beta</strong>. This will help you:</p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>Define goals of community</li>
+          </ul>
+          </li>
+        </li>
+        <hr class="govuk-section-break govuk-section-break--m ">
+        <li>
+          <h2 class="govuk-heading-m">Step-by-step</h2>
+          <p class="govuk-body">You should have this in <strong>beta</strong>. This will help you:</p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>Define goals of community</li>
+          </ul>
+        </li>
+        <hr class="govuk-section-break govuk-section-break--m ">
+        <li>
+          <h2 class="govuk-heading-m">Service map</h2>
+          <p class="govuk-body">You should have this in <strong>beta</strong>. This will help you:</p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>Define goals of community</li>
+          </ul>
+        </li>
+      </ul>
 
 
     </div>
