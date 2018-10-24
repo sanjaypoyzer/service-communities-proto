@@ -18,36 +18,39 @@
       <h1 class="govuk-heading-xl" style="margin-bottom:10px">Start a Business</h1>
       <p class="govuk-body" style="margin-bottom:50px">{{ govukTag({ text: "beta" }) }}</p>
 
-      <div class="govuk-grid-row" style="">
-        <div class="govuk-grid-column-one-quarter">
-          <h3 class="govuk-heading-xl" style="margin-bottom:0">12</h3>
-          <p class="govuk-body">workshops</p>
-        </div>
-        <div class="govuk-grid-column-one-quarter">
-          <h3 class="govuk-heading-xl" style="margin-bottom:0">25</h3>
-          <p class="govuk-body">people</p>
-        </div>
-        <div class="govuk-grid-column-one-quarter">
-          <h3 class="govuk-heading-xl" style="margin-bottom:0;float:left">10+</h3>
+        <div class="community-detail">
+          <h3 class="govuk-heading-l">10+</h3>
           <p class="govuk-body"> departments and agencies</p>
         </div>
-      </div>
-      <p class="govuk-body govuk-!-padding-top-5">The focus of the community is on the pre-start and start phases of starting a business - focusing specifically on SMEs. The next workshop for this community is on <strong>14 November</strong>.</p>
+        <div class="community-detail">
+          <h3 class="govuk-heading-l">25</h3>
+          <p class="govuk-body">people</p>
+        </div>
+        <div class="community-detail">
+          <h3 class="govuk-heading-l">12</h3>
+          <p class="govuk-body">workshops</p>
+        </div>
+        
+      
+      <p class="govuk-body govuk-!-padding-top-5">The focus of the community is on the pre-start and start phases of starting a business - focusing specifically on SMEs.</p>
+      <p class="govuk-body" style="margin-bottom:30px">The next workshop for this community is on <strong>14 November</strong>.</p>
       {{ govukButton({
-        text: "Join the mailing list",
+        text: "Join the public mailing list to get updates",
         href: "mailto:will.harmer@digital.cabinet-office.gov.uk"
       }) }}
+      <p class="govuk-body-s" style="margin-top: -15px;margin-bottom:40px"><a href="#">Join the community</a> if you work in this service area</p>
       <hr class="govuk-section-break govuk-section-break--m ">
       <div class="depts-agencies">
       <h3 class="govuk-heading-m govuk-!-padding-top-4">Departments and agencies in this community</h3>
-      <p class="govuk-body"><strong>Her Majesty's Revenue and Customs</strong> (HMRC SME strategy team, HMRC digital, HMRC Future tax admin team, HMRC self-assessment strategy team)</p>
-      <p class="govuk-body"><strong>Business, Energy and Industrial Strategy</strong> (SME Growth team)</p>
-      <p class="govuk-body"><strong>Department for Works and Pensions</strong> (UC Labour market strategy team, Strategy Work and Health joint unit)</p>
-      <p class="govuk-body"><strong>Food Standards Agency</strong></p>
-      <p class="govuk-body"><strong>Intellectual Property Office</strong></p>
-      <p class="govuk-body"><strong>Department for International Trade</strong></p>
-      <p class="govuk-body"><strong>British Business Bank</strong>
-      <p class="govuk-body"><strong>Department for Education</strong> (National careers service, National apprenticeship service)</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li><strong>Her Majesty's Revenue and Customs</strong> (HMRC SME strategy team, HMRC digital, HMRC Future tax admin team, HMRC self-assessment strategy team)</li>
+        <li><strong>Business, Energy and Industrial Strategy</strong> (SME Growth team)</li>
+        <li><strong>Department for Works and Pensions</strong> (UC Labour market strategy team, Strategy Work and Health joint unit)</li>
+        <li><strong>Food Standards Agency</strong></li>
+        <li><strong>Intellectual Property Office</strong></li>
+        <li><strong>Department for International Trade</strong></li>
+        <li><strong>British Business Bank</strong></li>
+        <li><strong>Department for Education</strong> (National careers service, National apprenticeship service)</li>
       </div>
       <hr class="govuk-section-break govuk-section-break--m ">
       <div class="community-artefacts">
@@ -59,22 +62,20 @@
 
       </div>
       <style>
-        .depts-agencies h4 {
-          margin-bottom: 20px;
-          margin-top: 0;
+        
+        .community-detail {
+          margin-bottom: 5px;
         }
-        .depts-agencies ul {
-          margin-top: -10px;
+        .community-detail h3,
+        .community-detail p {
+          display: inline-block;
           margin-bottom: 0;
         }
-        .depts-agencies ul li {
-          display: inline;
+        .community-detail h3 {
+          /*width: 80px;*/
         }
-        .depts-agencies ul li:after {
-          content: ", ";
-        }
-        .depts-agencies ul li:last-child:after {
-          content: "";
+        .community-detail p {
+          margin-left: 10px;
         }
       </style>
     </div>
