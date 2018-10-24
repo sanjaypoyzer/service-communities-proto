@@ -1,0 +1,83 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Start a Business Service Community
+{% endblock %}
+
+{% block content %}
+
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      {{ govukBackLink({
+        text: "Back",
+        href: "/browse-communities"
+      }) }}
+      <span class="govuk-caption-xl ">Service Community</span>
+      <h1 class="govuk-heading-xl" style="margin-bottom:10px">Start a Business</h1>
+      <p class="govuk-body" style="margin-bottom:50px">{{ govukTag({ text: "beta" }) }}</p>
+
+      <div class="govuk-grid-row" style="">
+        <div class="govuk-grid-column-one-quarter">
+          <h3 class="govuk-heading-xl" style="margin-bottom:0">12</h3>
+          <p class="govuk-body">workshops</p>
+        </div>
+        <div class="govuk-grid-column-one-quarter">
+          <h3 class="govuk-heading-xl" style="margin-bottom:0">25</h3>
+          <p class="govuk-body">people</p>
+        </div>
+        <div class="govuk-grid-column-one-quarter">
+          <h3 class="govuk-heading-xl" style="margin-bottom:0;float:left">10+</h3>
+          <p class="govuk-body"> departments and agencies</p>
+        </div>
+      </div>
+      <p class="govuk-body govuk-!-padding-top-5">The focus of the community is on the pre-start and start phases of starting a business - focusing specifically on SMEs. The next workshop for this community is on <strong>14 November</strong>.</p>
+      {{ govukButton({
+        text: "Join the mailing list",
+        href: "mailto:will.harmer@digital.cabinet-office.gov.uk"
+      }) }}
+      <hr class="govuk-section-break govuk-section-break--m ">
+      <div class="depts-agencies">
+      <h3 class="govuk-heading-m govuk-!-padding-top-4">Departments and agencies in this community</h3>
+      <p class="govuk-body"><strong>Her Majesty's Revenue and Customs</strong> (HMRC SME strategy team, HMRC digital, HMRC Future tax admin team, HMRC self-assessment strategy team)</p>
+      <p class="govuk-body"><strong>Business, Energy and Industrial Strategy</strong> (SME Growth team)</p>
+      <p class="govuk-body"><strong>Department for Works and Pensions</strong> (UC Labour market strategy team, Strategy Work and Health joint unit)</p>
+      <p class="govuk-body"><strong>Food Standards Agency</strong></p>
+      <p class="govuk-body"><strong>Intellectual Property Office</strong></p>
+      <p class="govuk-body"><strong>Department for International Trade</strong></p>
+      <p class="govuk-body"><strong>British Business Bank</strong>
+      <p class="govuk-body"><strong>Department for Education</strong> (National careers service, National apprenticeship service)</p>
+      </div>
+      <hr class="govuk-section-break govuk-section-break--m ">
+      <div class="community-artefacts">
+      <h3 class="govuk-heading-m govuk-!-padding-top-4">Community artefacts</h3>
+      <ul class="govuk-list govuk-list--bullet">
+        <li><a href="https://drive.google.com/open?id=1Pcu1BfPk5jQ5jkCFOtDIZ_kjx302U0O6">Terms of Reference</a> (last updated 10.08.2018)</li>
+        <li><a href="https://drive.google.com/open?id=1wMVyHOHooh_y_o3zFYnDSvXlpg6jn6rV">Service Landscape</a> (last updated 13.09.2018)</li>
+      </ul>
+
+      </div>
+      <style>
+        .depts-agencies h4 {
+          margin-bottom: 20px;
+          margin-top: 0;
+        }
+        .depts-agencies ul {
+          margin-top: -10px;
+          margin-bottom: 0;
+        }
+        .depts-agencies ul li {
+          display: inline;
+        }
+        .depts-agencies ul li:after {
+          content: ", ";
+        }
+        .depts-agencies ul li:last-child:after {
+          content: "";
+        }
+      </style>
+    </div>
+</div>
+
+{% endblock %}
